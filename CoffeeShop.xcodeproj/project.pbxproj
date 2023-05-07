@@ -8,17 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		275046C82A08089200768C30 /* CoffeeShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275046C72A08089200768C30 /* CoffeeShopApp.swift */; };
-		275046CA2A08089200768C30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275046C92A08089200768C30 /* ContentView.swift */; };
+		275046CA2A08089200768C30 /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275046C92A08089200768C30 /* AppTabView.swift */; };
 		275046CC2A08089400768C30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275046CB2A08089400768C30 /* Assets.xcassets */; };
 		275046CF2A08089400768C30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275046CE2A08089400768C30 /* Preview Assets.xcassets */; };
+		275046DA2A0809F800768C30 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275046D92A0809F800768C30 /* HomeView.swift */; };
+		275046DC2A080A0D00768C30 /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275046DB2A080A0D00768C30 /* BasketView.swift */; };
+		275046DE2A080A1800768C30 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275046DD2A080A1800768C30 /* PersonView.swift */; };
+		275046E12A080BBF00768C30 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275046E02A080BBF00768C30 /* Drink.swift */; };
+		275046E32A080C4500768C30 /* DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275046E22A080C4500768C30 /* DummyData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		275046C42A08089200768C30 /* CoffeeShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275046C72A08089200768C30 /* CoffeeShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeShopApp.swift; sourceTree = "<group>"; };
-		275046C92A08089200768C30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		275046C92A08089200768C30 /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
 		275046CB2A08089400768C30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		275046CE2A08089400768C30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		275046D52A0808AE00768C30 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		275046D92A0809F800768C30 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		275046DB2A080A0D00768C30 /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		275046DD2A080A1800768C30 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		275046E02A080BBF00768C30 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		275046E22A080C4500768C30 /* DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,7 @@
 		275046BB2A08089200768C30 = {
 			isa = PBXGroup;
 			children = (
+				275046D52A0808AE00768C30 /* README.md */,
 				275046C62A08089200768C30 /* CoffeeShop */,
 				275046C52A08089200768C30 /* Products */,
 			);
@@ -51,10 +63,10 @@
 		275046C62A08089200768C30 /* CoffeeShop */ = {
 			isa = PBXGroup;
 			children = (
-				275046C72A08089200768C30 /* CoffeeShopApp.swift */,
-				275046C92A08089200768C30 /* ContentView.swift */,
-				275046CB2A08089400768C30 /* Assets.xcassets */,
-				275046CD2A08089400768C30 /* Preview Content */,
+				275046DF2A080BB200768C30 /* Model */,
+				275046D62A0809C200768C30 /* App */,
+				275046D82A0809E600768C30 /* Features */,
+				275046D72A0809CF00768C30 /* Supporting Files */,
 			);
 			path = CoffeeShop;
 			sourceTree = "<group>";
@@ -65,6 +77,43 @@
 				275046CE2A08089400768C30 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		275046D62A0809C200768C30 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				275046C72A08089200768C30 /* CoffeeShopApp.swift */,
+				275046C92A08089200768C30 /* AppTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		275046D72A0809CF00768C30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				275046CB2A08089400768C30 /* Assets.xcassets */,
+				275046CD2A08089400768C30 /* Preview Content */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		275046D82A0809E600768C30 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				275046D92A0809F800768C30 /* HomeView.swift */,
+				275046DB2A080A0D00768C30 /* BasketView.swift */,
+				275046DD2A080A1800768C30 /* PersonView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		275046DF2A080BB200768C30 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				275046E02A080BBF00768C30 /* Drink.swift */,
+				275046E22A080C4500768C30 /* DummyData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				275046CA2A08089200768C30 /* ContentView.swift in Sources */,
+				275046DE2A080A1800768C30 /* PersonView.swift in Sources */,
+				275046DC2A080A0D00768C30 /* BasketView.swift in Sources */,
+				275046DA2A0809F800768C30 /* HomeView.swift in Sources */,
+				275046E32A080C4500768C30 /* DummyData.swift in Sources */,
+				275046CA2A08089200768C30 /* AppTabView.swift in Sources */,
+				275046E12A080BBF00768C30 /* Drink.swift in Sources */,
 				275046C82A08089200768C30 /* CoffeeShopApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
